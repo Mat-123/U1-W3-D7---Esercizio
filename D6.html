@@ -128,16 +128,20 @@
                Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
             */
 
-      // const addToTheSecond = function () {
-      //   const newList =
-      //    };
+      const addToTheSecond = function () {
+        const SecondoUl = document.getElementById("secondList");
+        const newLi = document.createElement("li");
+        newLi.innerText = "Lista aggiunta";
+        SecondoUl.appendChild(newLi);
+      };
+      addToTheSecond();
 
       /* ESERCIZIO 6
                Scrivi una funzione che aggiunga un paragrafo al primo div
             */
-      /*
+
       const addParagraph = function () {
-        const NewPDiv = document.querySelector("div");
+        const NewPDiv = document.querySelector("body div");
         const newP = document.createElement("p");
         console.log(newP);
         newP.innerText = "Paragrafo aggiunto";
@@ -146,7 +150,6 @@
       };
 
       addParagraph();
-*/
       /* ESERCIZIO 7
                Scrivi una funzione che faccia scomparire la prima lista non ordinata
             */
